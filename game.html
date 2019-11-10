@@ -31,25 +31,28 @@
                 <div class="row">
 						<ul>
 						  <li id="q1" class="question">
-							<h2 class="shadow framed fromleft">Quel est le nom de votre entreprise / établissement?</h2><br><input required type="text" class="form-control form-control-success inshadow fromright" placeholder="" name="entry.774185163" id="q1val"  onchange="document.getElementById('q1a').classList.remove('hid');document.getElementById('q1').classList.add('hid');">
+							<h2 class="shadow framed fromleft">Quel est le nom de votre entreprise / établissement?</h2><br><input required type="text" class="form-control form-control-success inshadow fromright" placeholder="" name="entry.774185163" id="q1val"  onchange="document.getElementById('q2').classList.remove('hid');document.getElementById('q1').classList.add('hid');">
 						  <br><br><br><br><br><br><br><br><br><br><br><br><br></li>
-						  <li id="q1a" class="question hid">
+						  <li id="q2" class="question hid">
+							<button id="back1" class="btn btn-outline-danger em1" onclick="document.getElementById('q1').classList.remove('hid');document.getElementById('q2').classList.add('hid');"><i class="fa fa-arrow-left"></i></button>	    
 							<h2 class="shadow framed fromleft">Quelle est votre fonction au sein de l'entreprise?</h2>  
 						  <div class="select_categories">
 						   <div class="select">
-							<select required class="turq2 marg2" name="entry.873700546" onchange="document.getElementById('q2').classList.remove('hid');document.getElementById('q1a').classList.add('hid');">
+							<select required class="turq2 marg2" name="entry.873700546" onchange="document.getElementById('q3').classList.remove('hid');document.getElementById('q2').classList.add('hid');">
 						    	<option value="" disabled="disabled" selected="selected">fonction</option>
 						    	<option value="Manager environnement">Manager environnement</option>
 								<option value="Quality manager">Quality manager</option>
 								<option value="Top manager">Top manager</option>
-								<option value="Production">Production</option>
-								<option value="Marketing">Marketing</option>
-								<option value="Other">Other</option>
+								<option value="Ecodesign expert">Expert éco-conception</option>
+  								<option value="Production">Production</option>
+  								<option value="Marketing">Marketing</option>
+								<option value="Innovation">Innovation / développement de produits</option>
+								<option value="Other">Autre</option>
 							</select>
 						   </div>
 						  </div>								
 						  <br><br><br><br><br><br><br><br><br><br><br><br><br></li>		
-						  <li id="q2" class="question hid">
+						  <!--<li id="q2" class="question hid">
 						    <h2 class="shadow framed fromleft">Appartenez-vous un groupe multi établissement?</h2>
 		                        <br><br><br>
 								<label class="form-check-label spaceleft">	
@@ -62,8 +65,9 @@
 									<span class="turq2">Non</span>
 									<span class="form-check-sign"></span>
 								</label>
-						  <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br></li>
+						  <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br></li>-->
 							<li id="q3" class="question hid">
+							 <button id="back2" class="btn btn-outline-danger em1" onclick="document.getElementById('q2').classList.remove('hid');document.getElementById('q3').classList.add('hid');"><i class="fa fa-arrow-left"></i></button>		
 							 <h2 class="shadow framed fromleft">Quelle est la localisation du siège social de l’entreprise?</h2>
 							  <div class="select_categories">
 							   <div class="select">
@@ -75,43 +79,53 @@
 									<option value="Belgium">Belgique</option>
 									<option value="Italy">Italie</option>
 									<option value="United Kingdom">Royaume-Uni</option>
+									<option value="Germany">Allemagne</option>
+									<option value="Netherlands">Pays Bas</option>
+									<option value="Luxembourg">Luxembourg</option>
+									<option value="Porutgal">Porutgal</option>
+									<option value="Poland">Pologne</option>
+									<option value="Canada">Canada</option>
+									<option value="USA">USA</option>
+									<option value="Other countries">Autre</option>
 								</select>
 							   </div>
 							  </div>								
 						  <br><br><br><br><br><br><br><br><br><br><br><br><br></li>
 							
   							<li id="q4" class="question hid">
+							 <button id="back3" class="btn btn-outline-danger em1" onclick="document.getElementById('q3').classList.remove('hid');document.getElementById('q4').classList.add('hid');"><i class="fa fa-arrow-left"></i></button>	  
   						     <h2 class="shadow framed fromleft">Quel est le secteur d’activité de votre établissement?</h2>
 							  <div class="select_categories">
 							   <div class="select">	
   								<select required class="turq2 marg2" name="entry.292800088" onchange="document.getElementById('q5').classList.remove('hid');document.getElementById('q4').classList.add('hid');document.getElementById('but0').style='display:none';">
 							    	<option value="" disabled="disabled" selected="selected">Secteur</option>
-									<option value="Secteur agricole">Secteur agricole</option>
-									<option value="Secteur agroalimentaire">Secteur agroalimentaire</option>
-									<option value="Secteur bancaire et financier">Secteur bancaire et financier</option>
-									<option value="Secteur de l'énergie">Secteur de l'énergie</option>
-									<option value="Secteur de l'information">Secteur de l'information</option>
-									<option value="Secteur de la communication et des médias">Secteur de la communication et des médias</option>
-									<option value="Secteur de la distribution">Secteur de la distribution</option>
-									<option value="Secteur de la recherche">Secteur de la recherche</option>
-									<option value="Secteur de la santé">Secteur de la santé</option>
-									<option value="Secteur des constructions mécaniques">Secteur des constructions mécaniques</option>
-									<option value="Secteur des industries chimiques">Secteur des industries chimiques</option>
-									<option value="Secteur des loisirs et du tourisme">Secteur des loisirs et du tourisme</option>
-									<option value="Secteur des matières premières">Secteur des matières premières</option>
-									<option value="Secteur des services">Secteur des services</option>
-									<option value="Secteur des transports">Secteur des transports</option>
-									<option value="Secteur du bâtiment">Secteur du bâtiment</option>
-									<option value="Secteur électronique">Secteur électronique</option>
-									<option value="Secteur informatique">Secteur informatique</option>
-									<option value="Secteur métallurgique">Secteur métallurgique</option>
-									<option value="Secteur textile">Secteur textile</option>
+									<option value="Secteur agricole">agricole</option>
+									<option value="Secteur agroalimentaire">agroalimentaire</option>
+									<option value="Secteur bancaire et financier">bancaire et financier</option>
+									<option value="Secteur de l'énergie">énergie</option>
+									<option value="Secteur de l'information">information</option>
+									<option value="Secteur de la communication et des médias">communication et des médias</option>
+									<option value="Secteur de la distribution">distribution</option>
+									<option value="Secteur de la recherche">recherche</option>
+									<option value="Secteur de la santé">santé</option>
+									<option value="Secteur des constructions mécaniques">constructions mécaniques</option>
+									<option value="Secteur des industries chimiques">industries chimiques</option>
+									<option value="Secteur des loisirs et du tourisme">loisirs et du tourisme</option>
+									<option value="Secteur des matières premières">matières premières</option>
+									<option value="Secteur des services">services</option>
+									<option value="Secteur des transports">transports</option>
+									<option value="Secteur du bâtiment">bâtiment</option>
+									<option value="Secteur électronique">électronique</option>
+									<option value="Secteur informatique">informatique</option>
+									<option value="Secteur métallurgique">métallurgique</option>
+									<option value="Secteur textile">textile</option>
 									<option value="Autre">Autre</option>
 								</select>
 							   </div>
 							  </div>
   						  <br><br><br><br><br><br><br><br><br><br><br><br><br></li>
 							<li id="q5" class="question hid">
+							<button id="back4" class="btn btn-outline-danger em1" onclick="document.getElementById('q4').classList.remove('hid');document.getElementById('q5').classList.add('hid');document.getElementById('but0').style='display:inline-block';"><i class="fa fa-arrow-left"></i></button>
 						    <h2 class="shadow framed fromleft">Quel est le nombre d'employés dans l’entreprise?</h2>
 								<label>
 								  <input required class="fromright marg2" type="number" name="entry.748385404" min="0" max="1000000"  onblur="document.getElementById('q6').classList.remove('hid');document.getElementById('q5').classList.add('hid');document.getElementById('but0').style='visibility:true';">
@@ -119,6 +133,7 @@
 								&nbsp;&nbsp;<button id="but0a" class="btn btn-outline-danger em2"><i class="fa fa-check"></i></button>
 						  <br><br><br><br><br><br><br><br><br><br><br><br><br></li>
 							<li id="q6" class="question hid">
+							<button id="back5" class="btn btn-outline-danger em1" onclick="document.getElementById('q5').classList.remove('hid');document.getElementById('q6').classList.add('hid');document.getElementById('but0').style='visibility:hidden';"><i class="fa fa-arrow-left"></i></button>
 						    <h2 class="shadow framed fromleft">Qui sont les principaux utilisateurs de vos produits?</h2>
 								<br>
 								<label class="form-check-label spaceleft">
@@ -132,6 +147,12 @@
 									<span class="turq2">D’autres entreprises (B2B)</span>
 									<span class="form-check-sign"></span>
 								</label>
+  								<br><br><br><br><br><br><br><br><br>
+  								<label class="form-check-label spaceright">
+  								  <input required class="form-check-input fromright" type="radio" name="entry.539557091" value="B2C+B2B" onchange="document.getElementById('but1').style='visibility:true';document.getElementById('q6').style='display:none';document.getElementById('but0').style='display:none';document.getElementById('votrentreprise').style='display:none';document.getElementById('game').classList.remove('hid');">
+  									<span class="turq2">B2C et B2B</span>
+  									<span class="form-check-sign"></span>
+  								</label>
 						  <br><br><br><br><br><br><br><br><br><br><br><br><br></li>
 						</ul>
 						&nbsp;&nbsp;<button id="but0" class="btn btn-outline-danger em5"><i class="fa fa-check"></i></button>
@@ -142,21 +163,21 @@
 		<table id="game" class="gametable hid" align="center">
 			<tr>
 				<td id="td1" class="rcorners1 unlock book">
-						<!--<h1 class="icons"><i class="fabig fa-book"></i>📖❊</h1>--><h2><br><br><br><br>Connaissances des enjeux</h2><span id="point1" style="visibility:hidden;"><br><h1 class="hid glow" id="cat1"> 0</h1><div id="progress"><div id="bar1"><table class="maturityicons" ><tr><td><!--👶-->1</td><td><!--👦-->2</td><td><!--👨-->3</td><td><!--🧓-->4</td></tr></table></div></div></span>
+						<!--<h1 class="icons"><i class="fabig fa-book"></i>📖❊</h1>--><h2><br><br><br><br>Connaissances des enjeux</h2><span id="point1" style="visibility:hidden;"><br><h1 class="hid glow" id="cat1"> 0</h1><div id="progress"><div id="bar1"><table class="maturityicons" ><tr><td><!--👶-->1</td><td><!--👦-->2</td><td><!--👨-->3</td><td><!--🧓-->4</td></tr></table></div></div><br><h7>Vous avez obtenu un score <span id="compare1"></span> à la moyenne pour cette catégorie.</h7></span>
 						<button id="but1" style="visibility:hidden;" onclick="document.getElementById('tab-1').checked=true;window.location='#content1'" class="btn btn-game btn-round btn-lg">Jouer à ce niveau <i class="fa fa-gamepad"></i></button>
 				</td>
 				<td id="td2" class="rcorners2 lock goal">
-						<!--<h1 class="icons"><i class="fabig fa-road"></i>🌐♚</h1>--><h2><br><br><br>Leadership et intégration stratégique</h2><span id="point2" style="visibility:hidden;"><br><h1 class="hid glow" id="cat2"> 0</h1><div id="progress"><div id="bar2"><table class="maturityicons"><tr><td><!--👶-->1</td><td><!--👦-->2</td><td><!--👨-->3</td><td><!--🧓-->4</td></tr></table></div></div></span>
+						<!--<h1 class="icons"><i class="fabig fa-road"></i>🌐♚</h1>--><h2><br><br><br>Leadership et intégration stratégique</h2><span id="point2" style="visibility:hidden;"><br><h1 class="hid glow" id="cat2"> 0</h1><div id="progress"><div id="bar2"><table class="maturityicons"><tr><td><!--👶-->1</td><td><!--👦-->2</td><td><!--👨-->3</td><td><!--🧓-->4</td></tr></table></div></div><br><h7>Vous avez obtenu un score <span id="compare2"></span> à la moyenne pour cette catégorie.</h7></span>
 						<button id="but2" style="visibility:hidden;" onclick="document.getElementById('tab-2').checked=true;window.location='#content2'" class="btn btn-game btn-round btn-lg">Jouer à ce niveau <i class="fa fa-gamepad"></i></button>
 				</td>
 			</tr>
 			<tr id="game1">
 				<td id="td3" class="rcorners3 lock wheel">
-					<!--<h1 class="icons"><i class="fabig fa-cogs"></i>⚙♟</h1>--><h2><br><br><br>Mise en œuvre et organisation opérationnelle</h2><span id="point3" style="visibility:hidden;"><br><h1 class="hid glow" id="cat3"> 0</h1><div id="progress"><div id="bar3"><table class="maturityicons"><tr><td><!--👶-->1</td><td><!--👦-->2</td><td><!--👨-->3</td><td><!--🧓-->4</td></tr></table></div></div></span>
+					<!--<h1 class="icons"><i class="fabig fa-cogs"></i>⚙♟</h1>--><h2><br><br><br>Mise en œuvre et organisation opérationnelle</h2><span id="point3" style="visibility:hidden;"><br><h1 class="hid glow" id="cat3"> 0</h1><div id="progress"><div id="bar3"><table class="maturityicons"><tr><td><!--👶-->1</td><td><!--👦-->2</td><td><!--👨-->3</td><td><!--🧓-->4</td></tr></table></div></div><br><h7>Vous avez obtenu un score <span id="compare3"></span> à la moyenne pour cette catégorie.</h7></span>
 					<button id="but3" style="visibility:hidden;" onclick="document.getElementById('tab-3').checked=true;window.location='#content3'" class="btn btn-game btn-round btn-lg">Jouer à ce niveau <i class="fa fa-gamepad"></i></button>
 				</td>
 				<td id="td4" class="rcorners4 lock dial">
-					<!--<h1 class="icons"><i class="fabig fa-signal"></i>📈⚑</h1>--><h2><br><br><br>Performance atteinte ou attendue&nbsp;</h2><span id="point4" style="visibility:hidden;"><br><h1 class="hid glow" id="cat4"> 0</h1><div id="progress"><div id="bar4"><table class="maturityicons"><tr><td><!--👶-->1</td><td><!--👦-->2</td><td><!--👨-->3</td><td><!--🧓-->4</td></tr></table></div></div></span>
+					<!--<h1 class="icons"><i class="fabig fa-signal"></i>📈⚑</h1>--><h2><br><br><br>Performance atteinte ou attendue&nbsp;</h2><span id="point4" style="visibility:hidden;"><br><h1 class="hid glow" id="cat4"> 0</h1><div id="progress"><div id="bar4"><table class="maturityicons"><tr><td><!--👶-->1</td><td><!--👦-->2</td><td><!--👨-->3</td><td><!--🧓-->4</td></tr></table></div></div><br><h7>Vous avez obtenu un score <span id="compare4"></span> à la moyenne pour cette catégorie.</h7></span>
 					<button id="but4" style="visibility:hidden;" onclick="document.getElementById('tab-4').checked=true;window.location='#content4'" class="btn btn-game btn-round btn-lg">Jouer à ce niveau <i class="fa fa-gamepad"></i></button>					
 				</td>
 			</tr>
@@ -188,6 +209,7 @@
 	  			<button id="but5" class="btn btn-outline-danger em2"><i class="fa fa-check"></i></button>
 		  </fieldset>		
 		  <fieldset class="even hid" id="q8">
+			<button id="back7" class="btn btn-outline-danger em1" onclick="document.getElementById('q7').style='display:block';document.getElementById('q8').style='display:none';document.getElementById('cat1').innerHTML=parseFloat(document.getElementById('cat1last').innerHTML);"><i class="fa fa-arrow-left"></i></button>  
 			<h2 class="fromleft"><!--<i class="fa fa-book"></i>📖&nbsp;&nbsp;&nbsp;&nbsp;-->Connaissance des parties intéressées (clients, concurrents, fournisseurs, Etat etc.) et de leurs attentes ou exigences tout au long du cycle de vie</h2> 
 		  		<input required type="radio" id="q8a" class="form-check-input radioin" name="entry.575472594" value="1" onchange="categoryScore(1,2,1);document.getElementById('q8').style='display:none';document.getElementById('q9').style='display:block';document.getElementById('td1').classList.remove('unlock');document.getElementById('td1').classList.add('star2');">
 				<label for="q8a"><h3 class="framedtight bg1 bgcat1c">Les parties intéressées sont partiellement identifiées, sur quelques étapes du cycle de vie, mais leurs attentes ou exigences ne sont pas (ou presque pas) collectées.</h3></label>
@@ -200,6 +222,7 @@
 	  			<button id="but6" class="btn btn-outline-danger em2"><i class="fa fa-check"></i></button>
 		  </fieldset>
 		  <fieldset class="three hid" id="q9">
+			<button id="back8" class="btn btn-outline-danger em1" onclick="document.getElementById('q8').style='display:block';document.getElementById('q9').style='display:none';document.getElementById('cat1').innerHTML=parseFloat(document.getElementById('cat1last').innerHTML);"><i class="fa fa-arrow-left"></i></button>
 			<h2 class="fromleft"><!--<i class="fa fa-book"></i>📖&nbsp;&nbsp;&nbsp;&nbsp;-->Analyse dynamique des risques et opportunités liés au cycle de vie des produits et services de l’entreprise</h2> 
 		  		<input required type="radio" id="q9a" class="form-check-input radioin" name="entry.1235505382" value="1" onchange="categoryScore(1,3,1);document.getElementById('q9').style='display:none';document.getElementById('r1').style='display:block';document.getElementById('td1').classList.remove('unlock');document.getElementById('td1').classList.add('star3'); parseFloat(document.getElementById('cat1').innerHTML) > parseFloat(document.getElementById('gavg1').innerText) ? document.getElementById('compare1').innerText = 'supérieur' : document.getElementById('compare1').innerText='inférieur';">
 				<label for="q9a"><h3 class="framedtight bg1 bgcat1c">Aucune analyse risques et opportunités n'est pas réalisées.</h3></label>
@@ -212,8 +235,9 @@
 	  			<button id="but7" class="btn btn-outline-danger em2"><i class="fa fa-check"></i></button>
 		  </fieldset>		  
 		  <span id="r1" style="visibility:hidden"><br><p align="center"><img src="assets/img/book.png"></p><h1 style="text-align:center;color:#2e9f64"><!--<i class="fabig fa-book"></i>📖--><br>Niveau complété!<br><br><br><img src="assets/img/thumbup.png">
-			    <h4 class="center-align">Vous avez obtenu un score <span id="compare1"> </span> à la moyenne pour cette catégorie.</h4><br>
-				<button type="button" class="center btn btn-danger btn-lg btn-round hid" onclick="document.getElementById('td2').classList.remove('lock');document.getElementById('td2').classList.add('unlock');document.getElementById('but1').style='visibility:hidden';document.getElementById('but2').style='visibility:true';document.getElementById('point1').style='visibility:true';movebar(1,parseInt(document.getElementById('cat1').innerHTML*25));document.getElementById('r1').style='display:none';window.location='#game'">Voir votre score <i class="fa fa-play"></i></button></h1>
+			    <!--<h4 class="center-align">Vous avez obtenu un score <span id="compare1"> </span> à la moyenne pour cette catégorie.</h4>-->
+				<br><br>
+				<button type="button" class="btn btn-danger btn-lg btn-round hid" onclick="document.getElementById('td2').classList.remove('lock');document.getElementById('td2').classList.add('unlock');document.getElementById('but1').style='visibility:hidden';document.getElementById('but2').style='visibility:true';document.getElementById('point1').style='visibility:true';movebar(1,parseInt(document.getElementById('cat1').innerHTML*25));document.getElementById('r1').style='display:none';window.location='#game'">Aller au prochain niveau <i class="fa fa-play"></i></button></h1>
 		  </span>
         </div>
  
@@ -232,6 +256,7 @@
 	  				<button id="but8" class="btn btn-outline-danger em2"><i class="fa fa-check"></i></button>
 		  	</fieldset>		
 		  	<fieldset class="even hid" id="q11">
+			<button id="back10" class="btn btn-outline-danger em1" onclick="document.getElementById('q10').style='display:block';document.getElementById('q11').style='display:none';document.getElementById('cat2').innerHTML=parseFloat(document.getElementById('cat2last').innerHTML);"><i class="fa fa-arrow-left"></i></button>
 				<h2 class="fromleft"><!--<i class="fa fa-road"></i>🌐&nbsp;&nbsp;&nbsp;&nbsp;-->Mise à disposition par la direction de moyens pour des projets d'éco-conception et de management du cycle de vie</h3> 
 			  		<input required type="radio" id="q11a" class="form-check-input radioin" name="entry.2021404149" value="1" onchange="categoryScore(2,2,1);document.getElementById('q11').style='display:none';document.getElementById('q12').style='display:block';document.getElementById('td2').classList.remove('star1');document.getElementById('td2').classList.add('star2');">
 					<label for="q11a"><h3 class="framedtight bg1 bgcat28">Aucun moyen spécifique (budget, personnel dédié, formation...) n'est alloué pour intégrer la pensée en cycle de vie et mener des projets d'éco-conception.</h3></label>
@@ -244,6 +269,7 @@
 	  				<button id="but9" class="btn btn-outline-danger em2"><i class="fa fa-check"></i></button>
 		  	</fieldset>		
 		  	<fieldset class="three hid" id="q12">
+			<button id="back11" class="btn btn-outline-danger em1" onclick="document.getElementById('q11').style='display:block';document.getElementById('q12').style='display:none';document.getElementById('cat2').innerHTML=parseFloat(document.getElementById('cat2last').innerHTML);"><i class="fa fa-arrow-left"></i></button>	
 				<h2 class="fromleft"><!--<i class="fa fa-road"></i>🌐&nbsp;&nbsp;&nbsp;&nbsp;-->Intégration de la pensée en cycle de vie et de l'éco-conception dans les revues de direction et processus de décision</h3> 
 			  		<input required type="radio" id="q12a" class="form-check-input radioin" name="entry.1315185936" value="1" onchange="categoryScore(2,3,1);document.getElementById('q12').style='display:none';document.getElementById('r2').style='display:block';document.getElementById('td2').classList.remove('star2');document.getElementById('td2').classList.add('star3'); parseFloat(document.getElementById('cat2').innerHTML) > parseFloat(document.getElementById('gavg2').innerText) ? document.getElementById('compare2').innerText = 'supérieur' : document.getElementById('compare2').innerText='inférieur';">
 					<label for="q12a"><h3 class="framedtight bg1 bgcat28">Les revues de direction n'abordent pas les enjeux environnementaux ni les moyens pour les traiter, aucun processus de décision ne prend en compte la performance environnementale.</h3></label>
@@ -256,8 +282,9 @@
 	  				<button id="but10" class="btn btn-outline-danger em2"><i class="fa fa-check"></i></button>
 		  	</fieldset>		
 		    <span id="r2" style="visibility:hidden"><br><p align="center"><img src="assets/img/goal.png"></p><h1 style="text-align:center;color:#2e9f64"><!--<i class="fabig fa-road"></i>🌐--><br>Niveau complété!<br><br><br><img src="assets/img/thumbup.png">
-			    <h4 class="center-align">Vous avez obtenu un score <span id="compare2"> </span> à la moyenne pour cette catégorie.</h4><br>				
-				<button type="button" class="center btn btn-danger btn-lg btn-round hid" onclick="document.getElementById('td3').classList.remove('lock');document.getElementById('td3').classList.add('unlock');document.getElementById('but2').style='visibility:hidden';document.getElementById('but3').style='visibility:true';document.getElementById('point2').style='visibility:true';movebar(2,parseInt(document.getElementById('cat2').innerHTML*25));document.getElementById('r2').style='display:none';window.location='#game'">Voir votre score <i class="fa fa-play"></i></button></h1>
+			    <!--<h4 class="center-align">Vous avez obtenu un score <span id="compare2"> </span> à la moyenne pour cette catégorie.</h4>-->
+				<br><br>				
+				<button type="button" class="btn btn-danger btn-lg btn-round hid" onclick="document.getElementById('td3').classList.remove('lock');document.getElementById('td3').classList.add('unlock');document.getElementById('but2').style='visibility:hidden';document.getElementById('but3').style='visibility:true';document.getElementById('point2').style='visibility:true';movebar(2,parseInt(document.getElementById('cat2').innerHTML*25));document.getElementById('r2').style='display:none';window.location='#td2'">Aller au prochain niveau <i class="fa fa-play"></i></button></h1>
 		    </span>
         </div>
 	
@@ -275,6 +302,7 @@
 					<label for="q13d"><h3 class="framedtight bg4 bgcat3">L'organisation en équipe projet est systématique et inscrite dans les procédures et méthodes de conception, intégrant ainsi le management du cycle de vie et des enjeux environnementaux.</h3></label>
       		 </fieldset>
 			 <fieldset class="even hid" id="q14">
+			 <button id="back13" class="btn btn-outline-danger em1" onclick="document.getElementById('q13').style='display:block';document.getElementById('q14').style='display:none';document.getElementById('cat3').innerHTML=parseFloat(document.getElementById('cat3last').innerHTML);"><i class="fa fa-arrow-left"></i></button>
 				<h2 class="fromleft"><!--<i class="fa fa-cogs"></i>⚙&nbsp;&nbsp;&nbsp;&nbsp;-->Intégration des pratiques et méthodes d'éco-conception en vue de l'économie circulaire dans le développement des produits et services</h2>
 		  <input required type="radio" id="q14a" class="form-check-input radioin" name="entry.279307128" value="1"  onchange="categoryScore(3,2,1);document.getElementById('q14').style='display:none';document.getElementById('q15').style='display:block';document.getElementById('td3').classList.remove('star1');document.getElementById('td3').classList.add('star2');">
 					<label for="q14a"><h3 class="framedtight bg1 bgcat38">Aucune méthode ni pratique d'éco-conception n'est intégrée dans le développement des produits OU L'éco-conception peut être mise en oeuvre occasionnellement, sans méthode construite et reproductible.</h3></label>
@@ -286,6 +314,7 @@
 					<label for="q14d"><h3 class="framedtight bg4 bgcat3">Les méthodes et outils d'éco-conception sont intégrés dans les processus de développement sous diverses formes telles que règles métier, check-list ou guide de bonnes pratiques. Des bases de données permettent de capitaliser sur les connaissances acquises et de démultiplier les démarches pour une mise en oeuvre plus efficace.</h3></label>
       		 </fieldset>
   		  	 <fieldset class="three hid" id="q15">
+			    <button id="back14" class="btn btn-outline-danger em1" onclick="document.getElementById('q14').style='display:block';document.getElementById('q15').style='display:none';document.getElementById('cat3').innerHTML=parseFloat(document.getElementById('cat3last').innerHTML);"><i class="fa fa-arrow-left"></i></button>
   				<h2 class="fromleft"><!--<i class="fa fa-cogs"></i>⚙&nbsp;&nbsp;&nbsp;&nbsp;-->Définition et suivi des indicateurs de performance en éco-conception</h2>
 		  	  	<input required type="radio" id="q15a" class="form-check-input radioin" name="entry.1449748254" value="1" onchange="categoryScore(3,3,1);document.getElementById('q15').style='display:none';document.getElementById('r3').style='display:block';document.getElementById('td3').classList.remove('star2');document.getElementById('td3').classList.add('star3'); parseFloat(document.getElementById('cat3').innerHTML) > parseFloat(document.getElementById('gavg3').innerText) ? document.getElementById('compare3').innerText = 'supérieur' : document.getElementById('compare3').innerText='inférieur';">
 					<label for="q15a"><h3 class="framedtight bg1 bgcat38">Des indicateurs mesurant la performance environnementale de démarches d'éco-conception n'ont pas été identifiés précisément. D'éventuels indicateurs génériques peuvent exister,  s'apparentant à des stratégies/objectifs évasifs (ex : j'utilise du bois).</h3></label>
@@ -298,8 +327,9 @@
 	  				<button id="but11" class="btn btn-outline-danger em2"><i class="fa fa-check"></i></button>
 		  	</fieldset>		
 		    <span id="r3" style="visibility:hidden"><br><p align="center"><img src="assets/img/wheel.png"></p><h1 style="text-align:center;color:#2e9f64"><!--<i class="fabig fa-cogs"></i>⚙--><br>Niveau complété!<br><br><br><img src="assets/img/thumbup.png">
-			    <h4 class="center-align">Vous avez obtenu un score <span id="compare3"> </span> à la moyenne pour cette catégorie.</h4><br>
-				<button type="button" class="center btn btn-danger btn-lg btn-round hid" onclick="document.getElementById('td4').classList.remove('lock');document.getElementById('td4').classList.add('unlock');document.getElementById('but3').style='visibility:hidden';document.getElementById('but4').style='visibility:true';document.getElementById('point3').style='visibility:true';movebar(3,parseInt(document.getElementById('cat3').innerHTML*25));document.getElementById('r3').style='display:none';window.location='#game1'">Voir votre score <i class="fa fa-play"></i></button></h1>
+			    <!--<h4 class="center-align">Vous avez obtenu un score <span id="compare3"> </span> à la moyenne pour cette catégorie.</h4>-->
+				<br><br>
+				<button type="button" class="btn btn-danger btn-lg btn-round hid" onclick="document.getElementById('td4').classList.remove('lock');document.getElementById('td4').classList.add('unlock');document.getElementById('but3').style='visibility:hidden';document.getElementById('but4').style='visibility:true';document.getElementById('point3').style='visibility:true';movebar(3,parseInt(document.getElementById('cat3').innerHTML*25));document.getElementById('r3').style='display:none';window.location='#game1'">Aller au prochain niveau <i class="fa fa-play"></i></button></h1>
 		    </span>
         </div>
 	
@@ -317,6 +347,7 @@
 					<label for="q16d"><h3 class="framedtight bg4 bgcat4">L'ensemble de l'équipe projet en lien avec le développement de produit ou service sont fomés et outillés et mettent en oeuvre l'éco-conception.</h3></label>
       		 </fieldset>
 			 <fieldset class="even hid" id="q17">
+				<button id="back16" class="btn btn-outline-danger em1" onclick="document.getElementById('q16').style='display:block';document.getElementById('q17').style='display:none';document.getElementById('cat4').innerHTML=parseFloat(document.getElementById('cat4last').innerHTML);"><i class="fa fa-arrow-left"></i></button>
 				<h2 class="fromleft"><!--<i class="fa fa-signal"></i>📈&nbsp;&nbsp;&nbsp;&nbsp;-->Developpement de produits ou services éco-conçus</h2>
 		  	  	<input required type="radio" id="q17a" class="form-check-input radioin" name="entry.275599064" value="1"  onchange="categoryScore(4,2,1);document.getElementById('q17').style='display:none';document.getElementById('q18').style='display:block';document.getElementById('td4').classList.remove('star1');document.getElementById('td4').classList.add('star2');">
 					<label for="q17a"><h3 class="framedtight bg1 bgcat48">Aucun produit n'a fait l'objet d'une démarche d'éco-conception.</h3></label>
@@ -328,6 +359,7 @@
 					<label for="q17d"><h3 class="framedtight bg4 bgcat4">Tous les produits et services sont éco-conçus selon la vision et la stratégie choisie et portée par l'entreprise.</h3></label>
       		 </fieldset>
   		  	 <fieldset class="three hid" id="q18">
+				<button id="back17" class="btn btn-outline-danger em1" onclick="document.getElementById('q17').style='display:block';document.getElementById('q18').style='display:none';document.getElementById('cat4').innerHTML=parseFloat(document.getElementById('cat4last').innerHTML);"><i class="fa fa-arrow-left"></i></button>
   				<h2 class="fromleft"><!--<i class="fa fa-signal"></i>📈&nbsp;&nbsp;&nbsp;&nbsp;-->Communication externe sur la performance environnementale de ses produits ou services</h2>
 		  	  	<input required type="radio" id="q18a" class="form-check-input radioin" name="entry.1580074078" value="1" onchange="categoryScore(4,3,1);document.getElementById('q18').style='display:none';document.getElementById('r4').style='display:block';document.getElementById('td4').classList.remove('star2');document.getElementById('td4').classList.add('star3'); parseFloat(document.getElementById('cat4').innerHTML) > parseFloat(document.getElementById('gavg4').innerText) ? document.getElementById('compare4').innerText = 'supérieur' : document.getElementById('compare4').innerText='inférieur';">
 					<label for="q18a"><h3 class="framedtight bg1 bgcat48">La performance environnementale des produits ou services ne fait l'objet d'aucune communication externe par l'entreprise.</h3></label>
@@ -340,8 +372,9 @@
 	  				<button id="but12" class="btn btn-outline-danger em2"><i class="fa fa-check"></i></button>
 		  	</fieldset>		
 		    <span id="r4" style="visibility:hidden"><br><p align="center"><img src="assets/img/dial.png"></p><h1 style="text-align:center;color:#2e9f64"><!--<i class="fabig fa-signal"></i>📈--><br>Niveau complété!<br><br><br><img src="assets/img/thumbup.png">
-			    <h4 class="center-align">Vous avez obtenu un score <span id="compare4"> </span> à la moyenne pour cette catégorie.</h4><br>
-				<button type="button" class="center btn btn-danger btn-lg btn-round hid" onclick="document.getElementById('but4').style='visibility:hidden';document.getElementById('point4').style='visibility:true';movebar(4,parseInt(document.getElementById('cat4').innerHTML*25));document.getElementById('envoyer').style='visibility:true';document.getElementById('r4').style='display:none';document.getElementById('questions').style='display:none';window.location='#game1'">Voir votre score <i class="fa fa-play"></i></button></h1>
+			    <!--<h4 class="center-align">Vous avez obtenu un score <span id="compare4"> </span> à la moyenne pour cette catégorie.</h4>-->
+				<br><br>
+				<button type="button" class="btn btn-danger btn-lg btn-round hid" onclick="document.getElementById('but4').style='visibility:hidden';document.getElementById('point4').style='visibility:true';movebar(4,parseInt(document.getElementById('cat4').innerHTML*25));document.getElementById('envoyer').style='visibility:true';document.getElementById('r4').style='display:none';document.getElementById('questions').style='display:none';window.location='#td4'">Voir votre score <i class="fa fa-play"></i></button></h1>
 		    </span>
 		</div>
   	  </div>
@@ -350,6 +383,9 @@
   </div>
  </div> 
 </div>
+
+<span class="hid" id="cat1last"> 0</span><span class="hid" id="cat2last"> 0</span><span class="hid" id="cat3last"> 0</span><span class="hid" id="cat4last"> 0</span>
+
 </body>
 
 <script type="text/javascript"> 

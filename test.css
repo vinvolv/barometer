@@ -125,6 +125,7 @@
 	/* .fromleft {font-size:1.5em;}
 	.framedtight {font-size:1em;} */
 	.turq2 {display:table-caption;}
+	.em1 { position:fixed!important; top:51%!important; left:10px!important; z-index:1;}
 	.em2 { position:fixed!important; top:50%; right:0px!important;}
 	.em5 { position:fixed!important; top:50%!important; right:60px!important;}
 	.resultitle h1 { color:#545454a3;}
@@ -141,6 +142,12 @@
 		width:120%; 
 		height:120%;
 	}
+	h3 {font-size:1.5em!important;}
+	.content div {width:150%!important;}
+	.rcorners1,.rcorners2,.rcorners3,.rcorners4 {width:100%!important;}
+}
+@media screen and (max-height: 568px) {
+	h3 {font-size:1.2em!important;}
 }
 
 .arrows {
