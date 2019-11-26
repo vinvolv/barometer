@@ -124,6 +124,7 @@
 	.maturityicons {display:none!important;}
 	/* .fromleft {font-size:1.5em;}
 	.framedtight {font-size:1em;} */
+	.btn-outline-danger { margin: 75% 0px 0px; }
 	.turq2 {display:table-caption;}
 	.em1 { position:fixed!important; top:51%!important; left:10px!important; z-index:1;}
 	.em2 { position:fixed!important; top:50%; right:0px!important;}
