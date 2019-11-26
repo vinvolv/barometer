@@ -276,7 +276,7 @@
                     $('#companyName').val($('#myfirm').html());
                 } else {
                     //window.location.reload();
-                    window.location=encodeURIComponent(window.location.href+'&re=true');
+                    window.location=window.location.href+'%26re%3Dtrue';
                 }
             } else {
                 $('#rightco').removeClass('hid');
