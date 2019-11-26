@@ -142,11 +142,6 @@
 		width:120%; 
 		height:120%;
 	}
-	.docs-charts-component-canvas {
-	    width: 320px!important;
-	    height: auto!important;
-	    margin: 9%;
-	}
 	h3 {font-size:1.5em!important;}
 	.content div {width:150%!important;}
 	.rcorners1,.rcorners2,.rcorners3,.rcorners4 {width:100%!important;}
