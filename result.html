@@ -271,12 +271,14 @@
 			if ( youravg<2 ) { $('#youresult').addClass("big1"); } else if ( youravg<3 ) { $('#youresult').addClass("big2"); } else if ( youravg<4 ) { $('#youresult').addClass("big3"); } else { $('#youresult').addClass("big4"); }
 			              
             if (decodeURI(getUrlVars()["co"])!=$('#myfirm').html()) {
-                if (getUrlVars()["re"]==true) {
+                //if (getUrlVars()["re"]==true) {
+				var u = window.location.href;	
+				if (u.indexOf("&re=true")!=-1) {
                     $('#wrongco').removeClass('hid');
                     $('#companyName').val($('#myfirm').html());
                 } else {
                     //window.location.reload();
-                    window.location=window.location.href+'&re=true';
+                    window.location=u+'&re=true';
                 }
             } else {
                 $('#rightco').removeClass('hid');
