@@ -53,6 +53,8 @@
 	color:#545454a3;
 }
 
+.fullwidth img { width:100%; }
+
 @media screen and (min-width: 768px) {
 	/* body { background: linear-gradient(to bottom right, #7ebec0, #f1eae0);  } */
 	

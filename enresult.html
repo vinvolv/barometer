@@ -34,7 +34,9 @@
     	<div class="wrapper" id="result">
 
 	    		<div class="content-center">
-                    
+					
+                    <div id='processing' class='fullwidth'><img src='assets/img/spin.gif'></div>
+
 	    			<div class="container hid" id="wrongco">
 
                          <script type="text/javascript">var submitted=false;</script>
@@ -230,7 +232,7 @@
 </body>
 
 <script type="text/javascript"> 
-	$(document).ready(function(){		
+	$(document).ready(function(){
 		var mySpreadsheet = 'https://docs.google.com/spreadsheets/d/1KcqLsE8S6b4ni67ZxbSQv8lj3sgeQUoVO3UhSLQZ6RQ/edit#gid=0'; 
 		$('#avgall').sheetrock({ url: mySpreadsheet, query: "select G limit 1" });
 		$('#a1').sheetrock({ url: mySpreadsheet, query: "select H limit 1" });
@@ -284,9 +286,9 @@
                 $('#rightco').removeClass('hid');
                 $('#compName').val($('#myfirm').html());
             } 
-              
-		  }, 1500);
-		
+			$('#processing').addClass('hid');
+		  }, 7000);
+
 	});
 	
 </script>
