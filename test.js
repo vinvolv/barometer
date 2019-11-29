@@ -24,18 +24,24 @@ function showChartENa () {
 }
 
 function showChartENi () {
+    $("#benchmark-industry").html('<iframe width="1007" height="926" seamless frameborder="0" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQVMUJdvaMJpDslFF1LT2IX77A9fILAvJ0KdmYzjGXbaqTunbXurA2ACeeZpjJ_sUAbNpM1V0KYNTEd/pubchart?oid=730782295&amp;format=interactive"></iframe>');
+	$("#benchmark-country").html('<iframe width="1007" height="926" seamless frameborder="0" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQVMUJdvaMJpDslFF1LT2IX77A9fILAvJ0KdmYzjGXbaqTunbXurA2ACeeZpjJ_sUAbNpM1V0KYNTEd/pubchart?oid=1375964741&amp;format=interactive"></iframe>');
+	$("#benchmark-global").html('<iframe width="1007" height="926" seamless frameborder="0" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQVMUJdvaMJpDslFF1LT2IX77A9fILAvJ0KdmYzjGXbaqTunbXurA2ACeeZpjJ_sUAbNpM1V0KYNTEd/pubchart?oid=1637236995&amp;format=interactive"></iframe>');
 	$("#benchmark-industry").removeClass('hid');
-    $("#benchmark-industry").html('<iframe width="1007" height="926" seamless frameborder="0" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQVMUJdvaMJpDslFF1LT2IX77A9fILAvJ0KdmYzjGXbaqTunbXurA2ACeeZpjJ_sUAbNpM1V0KYNTEd/pubchart?oid=730782295&amp;format=interactive"></iframe>').removeClass('hid');
-	$("#benchmark-country").html('<iframe width="1007" height="926" seamless frameborder="0" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQVMUJdvaMJpDslFF1LT2IX77A9fILAvJ0KdmYzjGXbaqTunbXurA2ACeeZpjJ_sUAbNpM1V0KYNTEd/pubchart?oid=1375964741&amp;format=interactive"></iframe>').removeClass('hid');
-	$("#benchmark-global").html('<iframe width="1007" height="926" seamless frameborder="0" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQVMUJdvaMJpDslFF1LT2IX77A9fILAvJ0KdmYzjGXbaqTunbXurA2ACeeZpjJ_sUAbNpM1V0KYNTEd/pubchart?oid=1637236995&amp;format=interactive"></iframe>').removeClass('hid');
 }
 
 function showChartENc () {
+    $("#benchmark-industry").html('<iframe width="1007" height="926" seamless frameborder="0" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQVMUJdvaMJpDslFF1LT2IX77A9fILAvJ0KdmYzjGXbaqTunbXurA2ACeeZpjJ_sUAbNpM1V0KYNTEd/pubchart?oid=730782295&amp;format=interactive"></iframe>');
+	$("#benchmark-country").html('<iframe width="1007" height="926" seamless frameborder="0" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQVMUJdvaMJpDslFF1LT2IX77A9fILAvJ0KdmYzjGXbaqTunbXurA2ACeeZpjJ_sUAbNpM1V0KYNTEd/pubchart?oid=1375964741&amp;format=interactive"></iframe>');
+	$("#benchmark-global").html('<iframe width="1007" height="926" seamless frameborder="0" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQVMUJdvaMJpDslFF1LT2IX77A9fILAvJ0KdmYzjGXbaqTunbXurA2ACeeZpjJ_sUAbNpM1V0KYNTEd/pubchart?oid=1637236995&amp;format=interactive"></iframe>');
 	$("#benchmark-country").removeClass('hid');
     //$("#benchmark-country").html('<iframe width="1007" height="926" seamless frameborder="0" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQVMUJdvaMJpDslFF1LT2IX77A9fILAvJ0KdmYzjGXbaqTunbXurA2ACeeZpjJ_sUAbNpM1V0KYNTEd/pubchart?oid=1375964741&amp;format=interactive"></iframe>').removeClass('hid');
 }
 
 function showChartENg () {
+    $("#benchmark-industry").html('<iframe width="1007" height="926" seamless frameborder="0" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQVMUJdvaMJpDslFF1LT2IX77A9fILAvJ0KdmYzjGXbaqTunbXurA2ACeeZpjJ_sUAbNpM1V0KYNTEd/pubchart?oid=730782295&amp;format=interactive"></iframe>');
+	$("#benchmark-country").html('<iframe width="1007" height="926" seamless frameborder="0" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQVMUJdvaMJpDslFF1LT2IX77A9fILAvJ0KdmYzjGXbaqTunbXurA2ACeeZpjJ_sUAbNpM1V0KYNTEd/pubchart?oid=1375964741&amp;format=interactive"></iframe>');
+	$("#benchmark-global").html('<iframe width="1007" height="926" seamless frameborder="0" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQVMUJdvaMJpDslFF1LT2IX77A9fILAvJ0KdmYzjGXbaqTunbXurA2ACeeZpjJ_sUAbNpM1V0KYNTEd/pubchart?oid=1637236995&amp;format=interactive"></iframe>');
 	$("#benchmark-global").removeClass('hid');
     //$("#benchmark-global").html('<iframe width="1007" height="926" seamless frameborder="0" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQVMUJdvaMJpDslFF1LT2IX77A9fILAvJ0KdmYzjGXbaqTunbXurA2ACeeZpjJ_sUAbNpM1V0KYNTEd/pubchart?oid=1637236995&amp;format=interactive"></iframe>').removeClass('hid');
 }
