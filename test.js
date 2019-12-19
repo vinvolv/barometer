@@ -1,26 +1,32 @@
 function showChartFRa () {
-	$("#benchmark-all").removeClass('hid');
-    //$("#benchmark-all").html('<iframe width="1007" height="926" seamless frameborder="0" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQVMUJdvaMJpDslFF1LT2IX77A9fILAvJ0KdmYzjGXbaqTunbXurA2ACeeZpjJ_sUAbNpM1V0KYNTEd/pubchart?oid=1006635721&amp;format=interactive"></iframe><br><br>').removeClass('hid');
+	//$("#benchmark-all").removeClass('hid');
+    $("#benchmark-all").html('<iframe width="1007" height="926" seamless frameborder="0" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQVMUJdvaMJpDslFF1LT2IX77A9fILAvJ0KdmYzjGXbaqTunbXurA2ACeeZpjJ_sUAbNpM1V0KYNTEd/pubchart?oid=1006635721&amp;format=interactive"></iframe><br><br>').removeClass('hid');
 }
 
 function showChartFRi () {
+	$("#benchmark-industry").html('<iframe width="1007" height="926" seamless frameborder="0" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQVMUJdvaMJpDslFF1LT2IX77A9fILAvJ0KdmYzjGXbaqTunbXurA2ACeeZpjJ_sUAbNpM1V0KYNTEd/pubchart?oid=879974614&amp;format=interactive"></iframe>'); 
+	$("#benchmark-country").html('<iframe width="1007" height="926" seamless frameborder="0" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQVMUJdvaMJpDslFF1LT2IX77A9fILAvJ0KdmYzjGXbaqTunbXurA2ACeeZpjJ_sUAbNpM1V0KYNTEd/pubchart?oid=2069911735&amp;format=interactive"></iframe>');
+	$("#benchmark-global").html('<iframe width="1007" height="926" seamless frameborder="0" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQVMUJdvaMJpDslFF1LT2IX77A9fILAvJ0KdmYzjGXbaqTunbXurA2ACeeZpjJ_sUAbNpM1V0KYNTEd/pubchart?oid=1893647412&amp;format=interactive"></iframe>');  
 	$("#benchmark-industry").removeClass('hid');
-    //$("#benchmark-industry").html('<iframe width="1007" height="926" seamless frameborder="0" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQVMUJdvaMJpDslFF1LT2IX77A9fILAvJ0KdmYzjGXbaqTunbXurA2ACeeZpjJ_sUAbNpM1V0KYNTEd/pubchart?oid=879974614&amp;format=interactive"></iframe>').removeClass('hid'); 
 }
 
 function showChartFRc () {
+	$("#benchmark-industry").html('<iframe width="1007" height="926" seamless frameborder="0" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQVMUJdvaMJpDslFF1LT2IX77A9fILAvJ0KdmYzjGXbaqTunbXurA2ACeeZpjJ_sUAbNpM1V0KYNTEd/pubchart?oid=879974614&amp;format=interactive"></iframe>'); 
+	$("#benchmark-country").html('<iframe width="1007" height="926" seamless frameborder="0" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQVMUJdvaMJpDslFF1LT2IX77A9fILAvJ0KdmYzjGXbaqTunbXurA2ACeeZpjJ_sUAbNpM1V0KYNTEd/pubchart?oid=2069911735&amp;format=interactive"></iframe>');
+	$("#benchmark-global").html('<iframe width="1007" height="926" seamless frameborder="0" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQVMUJdvaMJpDslFF1LT2IX77A9fILAvJ0KdmYzjGXbaqTunbXurA2ACeeZpjJ_sUAbNpM1V0KYNTEd/pubchart?oid=1893647412&amp;format=interactive"></iframe>');
 	$("#benchmark-country").removeClass('hid');
-    //$("#benchmark-country").html('<iframe width="1007" height="926" seamless frameborder="0" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQVMUJdvaMJpDslFF1LT2IX77A9fILAvJ0KdmYzjGXbaqTunbXurA2ACeeZpjJ_sUAbNpM1V0KYNTEd/pubchart?oid=2069911735&amp;format=interactive"></iframe>').removeClass('hid'); 
 }
 
 function showChartFRg () {
+	$("#benchmark-industry").html('<iframe width="1007" height="926" seamless frameborder="0" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQVMUJdvaMJpDslFF1LT2IX77A9fILAvJ0KdmYzjGXbaqTunbXurA2ACeeZpjJ_sUAbNpM1V0KYNTEd/pubchart?oid=879974614&amp;format=interactive"></iframe>'); 
+	$("#benchmark-country").html('<iframe width="1007" height="926" seamless frameborder="0" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQVMUJdvaMJpDslFF1LT2IX77A9fILAvJ0KdmYzjGXbaqTunbXurA2ACeeZpjJ_sUAbNpM1V0KYNTEd/pubchart?oid=2069911735&amp;format=interactive"></iframe>');
+	$("#benchmark-global").html('<iframe width="1007" height="926" seamless frameborder="0" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQVMUJdvaMJpDslFF1LT2IX77A9fILAvJ0KdmYzjGXbaqTunbXurA2ACeeZpjJ_sUAbNpM1V0KYNTEd/pubchart?oid=1893647412&amp;format=interactive"></iframe>');
 	$("#benchmark-global").removeClass('hid');
-    //$("#benchmark-global").html('<iframe width="1007" height="926" seamless frameborder="0" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQVMUJdvaMJpDslFF1LT2IX77A9fILAvJ0KdmYzjGXbaqTunbXurA2ACeeZpjJ_sUAbNpM1V0KYNTEd/pubchart?oid=1893647412&amp;format=interactive"></iframe>').removeClass('hid'); 
 }
 
 function showChartENa () {
-	$("#benchmark-all").removeClass('hid');
-    //$("#benchmark-all").html('<iframe width="1007" height="926" seamless frameborder="0" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQVMUJdvaMJpDslFF1LT2IX77A9fILAvJ0KdmYzjGXbaqTunbXurA2ACeeZpjJ_sUAbNpM1V0KYNTEd/pubchart?oid=1436898309&amp;format=interactive"></iframe><br><br>').removeClass('hid');
+	//$("#benchmark-all").removeClass('hid');
+    $("#benchmark-all").html('<iframe width="1007" height="926" seamless frameborder="0" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQVMUJdvaMJpDslFF1LT2IX77A9fILAvJ0KdmYzjGXbaqTunbXurA2ACeeZpjJ_sUAbNpM1V0KYNTEd/pubchart?oid=1436898309&amp;format=interactive"></iframe><br><br>').removeClass('hid');
 }
 
 function showChartENi () {

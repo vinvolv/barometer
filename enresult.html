@@ -35,7 +35,7 @@
 
 	    		<div class="content-center">
 					
-                    <div id='processing' class='fullwidth'><img src='assets/img/spin.gif'><h3 style="margin:10%">We are processing your answers and calculating your benchmarks.<br>This may take upto 1 minute.</h3></div>
+                    <div id='processing' class='fullwidth'><img src='assets/img/spin.gif'><h3 style="margin:10%">We are processing your answers and calculating your benchmarks.</h3></div>
 
 	    			<div class="container hid" id="wrongco">
 
@@ -271,6 +271,7 @@
 		    
 			youravg = parseFloat ( $('#avgall').text() );
 			if ( youravg<2 ) { $('#youresult').addClass("big1"); } else if ( youravg<3 ) { $('#youresult').addClass("big2"); } else if ( youravg<4 ) { $('#youresult').addClass("big3"); } else { $('#youresult').addClass("big4"); }
+			
 			var u = window.location.href;	
             if (decodeURI(getUrlVars()["co"])!=$('#myfirm').html()) {
 				if (u.indexOf("&re=2")!=-1) {
