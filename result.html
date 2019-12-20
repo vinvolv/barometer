@@ -272,7 +272,7 @@
 			youravg = parseFloat ( $('#avgall').text() );
 			if ( youravg<2 ) { $('#youresult').addClass("big1"); } else if ( youravg<3 ) { $('#youresult').addClass("big2"); } else if ( youravg<4 ) { $('#youresult').addClass("big3"); } else { $('#youresult').addClass("big4"); }
 			
-			if (isIE) {
+			if ( isIE() ) {
 				$('#rightco').removeClass('hid');
 				$('#compName').val($('#myfirm').html());
 			} else {
