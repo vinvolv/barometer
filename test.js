@@ -128,6 +128,12 @@ function categoryScore(c,d,n){
 	return score;
 }
 
+function isIE() {
+  ua = navigator.userAgent;
+  var is_ie = ua.indexOf("MSIE ") > -1 || ua.indexOf("Trident/") > -1;
+  return is_ie; 
+}
+
 /*
 function appendChart() {
 	setTimeout(function (){
