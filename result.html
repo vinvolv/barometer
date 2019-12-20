@@ -272,26 +272,31 @@
 			youravg = parseFloat ( $('#avgall').text() );
 			if ( youravg<2 ) { $('#youresult').addClass("big1"); } else if ( youravg<3 ) { $('#youresult').addClass("big2"); } else if ( youravg<4 ) { $('#youresult').addClass("big3"); } else { $('#youresult').addClass("big4"); }
 			
-			var u = window.location.href;	
-            if (decodeURI(getUrlVars()["co"])!=$('#myfirm').html()) {
-				if (u.indexOf("&re=2")!=-1) {
-                    $('#wrongco').removeClass('hid');
-                    $('#companyName').val($('#myfirm').html());
-                } else if (u.indexOf("&re=1")!=-1) {
-					window.location.reload(true); 
-					window.location=u+'&re=2';
-                } else {
-					window.location.reload(true); 
-					window.location=u+'&re=1';
-                } 
-            } else if (u.indexOf("&re=3")!=-1) {
+			if (isIE) {
+				$('#rightco').removeClass('hid');
+				$('#compName').val($('#myfirm').html());
+			} else {
+				var u = window.location.href;	
+				if (decodeURI(getUrlVars()["co"])!=$('#myfirm').html()) {
+					if (u.indexOf("&re=2")!=-1) {
+						$('#wrongco').removeClass('hid');
+						$('#companyName').val($('#myfirm').html());
+					} else if (u.indexOf("&re=1")!=-1) {
+						window.location.reload(true); 
+						window.location=u+'&re=2';
+					} else {
+						window.location.reload(true); 
+						window.location=u+'&re=1';
+					} 
+				} else if (u.indexOf("&re=3")!=-1) {
 					$('#rightco').removeClass('hid');
-                	$('#compName').val($('#myfirm').html());
+					$('#compName').val($('#myfirm').html());
 					
-            } else {
+				} else {
 					window.location.reload(true); 
 					window.location=u+'&re=3';
-            } 
+				} 
+			}
 			$('#processing').addClass('hid');
 		  }, 3000);
 		
