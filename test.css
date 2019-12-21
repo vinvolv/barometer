@@ -142,8 +142,8 @@
 	    position: absolute;
 	    top: -5%;
 	    left: -20%;
-		/* width:120%; 
-		height:120%; */
+		width: 503px; 
+		height: 463px;
 	}
 	h3 {font-size:1.5em!important;}
 	.content div {width:150%!important;}
