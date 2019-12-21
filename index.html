@@ -84,6 +84,7 @@
     			<div class="container">
     				<div class="title-brand">
     					<h1>Evaluez votre<br>maturité en éco-conception</h1><br><br><br>
+						<p id="iosmessage" class="hid"><i class="fa fa-exclamation-triangle"></i> <b>Veuillez utiliser le navigateur Chrome sur votre iPhone ou iPad.</b></p>	
 						<h2>Obtenez un bilan gratuit et comparez-vous à <span id="gcnt"></span> entreprises</b><br>
 							<br><br><br></h2>
 						<p id="mozmessage" class="onlymoz"><i class="fa fa-exclamation-triangle"></i> Cet outil fonctionne mieux sur les navigateurs Chrome et Safari.</p>		
@@ -228,6 +229,9 @@ la pratique de gestion est appliquée de <br>manière opportune, c'est-à-dire p
 
 <script type="text/javascript"> 
 	$(document).ready(function(){
+		if (isSafariONiOS()) {
+			$("#iosmessage").removeClass('hid');
+		}		
 		var mySpreadsheet = 'https://docs.google.com/spreadsheets/d/1KcqLsE8S6b4ni67ZxbSQv8lj3sgeQUoVO3UhSLQZ6RQ/edit#gid=0'; 
 		$('#gcnt').sheetrock({
 			url: mySpreadsheet,
