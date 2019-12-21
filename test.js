@@ -140,7 +140,7 @@ function isIE() {
 
 function isSafariONiOS() {
   var ua = navigator.userAgent;
-  if (navigator.vendor && navigator.vendor.indexOf('Apple') > -1 && ua && ua.indexOf('CriOS') == -1 && us.indexOf('FxiOS') == -1) {
+  if (navigator.vendor && navigator.vendor.indexOf('Apple') > -1 && ua && ua.indexOf('CriOS') == -1 && ua.indexOf('FxiOS') == -1) {
 	  var iDevices = ['iPad','iPhone','iPod'];
 	  var np = navigator.platform;
 	  if (!!np) {
