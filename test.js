@@ -30,13 +30,9 @@ function showChartENa () {
 }
 
 function showChartENi () {
-	if (isSafariONiOS()) {
-		$("#benchmark-industry").html('<iframe width="101" height="93" seamless frameborder="0" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQVMUJdvaMJpDslFF1LT2IX77A9fILAvJ0KdmYzjGXbaqTunbXurA2ACeeZpjJ_sUAbNpM1V0KYNTEd/pubchart?oid=730782295&amp;format=interactive"></iframe>');
-	} else {
-		$("#benchmark-industry").html('<iframe width="1007" height="926" seamless frameborder="0" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQVMUJdvaMJpDslFF1LT2IX77A9fILAvJ0KdmYzjGXbaqTunbXurA2ACeeZpjJ_sUAbNpM1V0KYNTEd/pubchart?oid=730782295&amp;format=interactive"></iframe>');
-		$("#benchmark-country").html('<iframe width="1007" height="926" seamless frameborder="0" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQVMUJdvaMJpDslFF1LT2IX77A9fILAvJ0KdmYzjGXbaqTunbXurA2ACeeZpjJ_sUAbNpM1V0KYNTEd/pubchart?oid=1375964741&amp;format=interactive"></iframe>');
-		$("#benchmark-global").html('<iframe width="1007" height="926" seamless frameborder="0" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQVMUJdvaMJpDslFF1LT2IX77A9fILAvJ0KdmYzjGXbaqTunbXurA2ACeeZpjJ_sUAbNpM1V0KYNTEd/pubchart?oid=1637236995&amp;format=interactive"></iframe>');
-	}
+    $("#benchmark-industry").html('<iframe width="1007" height="926" seamless frameborder="0" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQVMUJdvaMJpDslFF1LT2IX77A9fILAvJ0KdmYzjGXbaqTunbXurA2ACeeZpjJ_sUAbNpM1V0KYNTEd/pubchart?oid=730782295&amp;format=interactive"></iframe>');
+	$("#benchmark-country").html('<iframe width="1007" height="926" seamless frameborder="0" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQVMUJdvaMJpDslFF1LT2IX77A9fILAvJ0KdmYzjGXbaqTunbXurA2ACeeZpjJ_sUAbNpM1V0KYNTEd/pubchart?oid=1375964741&amp;format=interactive"></iframe>');
+	$("#benchmark-global").html('<iframe width="1007" height="926" seamless frameborder="0" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQVMUJdvaMJpDslFF1LT2IX77A9fILAvJ0KdmYzjGXbaqTunbXurA2ACeeZpjJ_sUAbNpM1V0KYNTEd/pubchart?oid=1637236995&amp;format=interactive"></iframe>');
 	$("#benchmark-industry").removeClass('hid');
 }
 
@@ -140,7 +136,7 @@ function isIE() {
 
 function isSafariONiOS() {
   var ua = navigator.userAgent;
-  if (navigator.vendor && navigator.vendor.indexOf('Apple') > -1 && ua && ua.indexOf('CriOS') == -1 && ua.indexOf('FxiOS') == -1) {
+  if (navigator.vendor && navigator.vendor.indexOf('Apple') > -1 && ua && ua.indexOf('CriOS') == -1 && us.indexOf('FxiOS') == -1) {
 	  var iDevices = ['iPad','iPhone','iPod'];
 	  var np = navigator.platform;
 	  if (!!np) {

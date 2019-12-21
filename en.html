@@ -85,6 +85,7 @@
 						<h2>Get a free report and compare yourself to <span id="gcnt"></span> companies</b><br>
 							<br><br><br></h2>
 						<p id="mozmessage" class="onlymoz"><i class="fa fa-exclamation-triangle"></i> This tool works best on Chrome and Safari browsers.</p>	
+						<p id="iosmessage" class="hid"><i class="fa fa-exclamation-triangle"></i> Please use Chrome browser on your iPhone or iPad.</p>	
     				</div>
     			</div>
     		</div>
@@ -226,6 +227,9 @@ Eco-design is used<br>on an ad-hoc basis,<br>to correct problems<br>or respond t
 
 <script type="text/javascript"> 
 	$(document).ready(function(){
+		if (isSafariONiOS()) {
+			$("#iosmessage").removeClass('hid');
+		}
 		var mySpreadsheet = 'https://docs.google.com/spreadsheets/d/1KcqLsE8S6b4ni67ZxbSQv8lj3sgeQUoVO3UhSLQZ6RQ/edit#gid=0'; 
 		$('#gcnt').sheetrock({
 			url: mySpreadsheet,
