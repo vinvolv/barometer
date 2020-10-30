@@ -1,0 +1,314 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/png" href="assets/img/favicon.ico">
+    <link rel="apple-touch-icon" sizes="76x76" href="assets/img/apple-icon.png">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+    <title>Ecodesign-maturiteitsmeter</title>
+
+    <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+    <meta name="viewport" content="width=device-width" />
+
+    <!-- CSS -->
+	<link href="test.css" rel="stylesheet" />
+	<link href="assets/css/demo.css" rel="stylesheet" />
+
+    <!-- Bootstrap core CSS     -->
+	<link href="assets/css/bootstrap.min.css" rel="stylesheet" />
+	<link href="assets/css/paper-kit.css?v=2.1.0" rel="stylesheet"/>
+
+    <!--     Fonts and icons     -->
+    <link href='https://fonts.googleapis.com/css?family=Montserrat:400,300,700' rel='stylesheet' type='text/css'>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet">
+    <!--<link href="assets/css/nucleo-icons.css" rel="stylesheet" />-->
+
+	<!--  Plugin to read sheet data -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-sheetrock/1.1.4/dist/sheetrock.min.js"></script>
+</head>
+
+<body>
+    	<div class="wrapper" id="result">
+
+	    		<div class="content-center">
+					
+                    <div id='processing' class='fullwidth'><img src='assets/img/spin.gif'><h3 style="margin:10%">We verwerken uw antwoorden en berekenen uw benchmarks.</h3></div>
+
+	    			<div class="container hid" id="wrongco">
+
+                         <script type="text/javascript">var submitted=false;</script>
+                         <iframe name="iframe2" style="display:none;"></iframe>
+                         <form action="https://docs.google.com/forms/d/e/1FAIpQLSf32y9BIcd3ZgyL8jcA3Du_D9oyZOTXorvP3suoqMAnoEWZ0A/formResponse?hl=en" method="POST" id="mG61Hd" target="hidden_iframe" onsubmit="submitted=true;">
+                             <div class="row">
+                                <ul>
+                                    <li id="f4" class="question">
+                                        <h2 id="question4" class="shadow framed fromleft">Bedankt voor uw antwoorden!<br>Laat uw e-mail achter om uw ecodesign maturiteitsrapport te ontvangen.</h2><br><input required type="email" class="form-control form-control-success inshadow fromright" placeholder="" name="entry.1060693203"  onchange="">
+                                    </li>
+                                </ul>
+                                <input type="hidden" name="entry.1248610054" value="Yes">
+                                <input type="hidden" name="entry.1815474525" id="companyName"> 
+                                <div>
+                                    <br>
+                                    <button id="envoyer4" onclick="$('#merci4').removeClass('hid');" class="center btn btn-success btn-round button-submit glow"><h2>Verzenden</h2></button>
+                                </div>
+                            </div>
+                        </form>
+                        <br><br>
+                        <div id="merci4" class="hid"><h2 class="shadow framed fromleft">U ontvangt uw rapport zodra het gereed is.</h2></div>
+                        <br><br><br>
+
+                    </div>
+                        
+                            
+	    			<div class="container hid" id="rightco">
+			
+
+				<span class="resultitle"><h1><span id="myfirm"></span><!-- BENCHMARK--></h1></span>
+				<br><br>
+				
+				<button type="button" id="show-all" class="onlymoz leftcenter btn btn-danger btn-lg btn-round" onclick="showChartNLa()">Show benchmarks<i class="fa fa-play"></i></button>
+				
+<div class="chart hid" id="benchmark-all"><!--<iframe width="1007" height="926" seamless frameborder="0" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQVMUJdvaMJpDslFF1LT2IX77A9fILAvJ0KdmYzjGXbaqTunbXurA2ACeeZpjJ_sUAbNpM1V0KYNTEd/pubchart?oid=1436898309&amp;format=interactive"></iframe>--><br><br></div> 
+				
+				
+				<button type="button" id="show-industry" class="mozhide leftcenter btn btn-danger btn-lg btn-round" onclick="showChartNLi()">Vergelijk met het gemiddelde van uw sector<i class="fa fa-play"></i></button>
+							
+				<div class="chart hid" id="benchmark-industry"><!--<iframe width="1007" height="926" seamless frameborder="0" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQVMUJdvaMJpDslFF1LT2IX77A9fILAvJ0KdmYzjGXbaqTunbXurA2ACeeZpjJ_sUAbNpM1V0KYNTEd/pubchart?oid=730782295&amp;format=interactive"></iframe>--></div>
+				<br><br>
+				<button type="button" id="show-country" class="mozhide leftcenter btn btn-danger btn-lg btn-round" onclick="showChartNLc()">Vergelijk met het gemiddelde van uw land<i class="fa fa-play"></i></button>
+								
+				<div class="chart hid" id="benchmark-country"><!--<iframe width="1007" height="926" seamless frameborder="0" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQVMUJdvaMJpDslFF1LT2IX77A9fILAvJ0KdmYzjGXbaqTunbXurA2ACeeZpjJ_sUAbNpM1V0KYNTEd/pubchart?oid=1375964741&amp;format=interactive"></iframe>--></div>
+				<br><br>
+				<button type="button" id="show-global" class="mozhide leftcenter btn btn-danger btn-lg btn-round" onclick="showChartNLg()">Vergelijk met het wereldwijde gemiddelde<i class="fa fa-play"></i></button>
+				
+				<div class="chart hid" id="benchmark-global"><!--<iframe width="1007" height="926" seamless frameborder="0" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQVMUJdvaMJpDslFF1LT2IX77A9fILAvJ0KdmYzjGXbaqTunbXurA2ACeeZpjJ_sUAbNpM1V0KYNTEd/pubchart?oid=1637236995&amp;format=interactive"></iframe>--></div>
+				
+				<!--<div class="chart">					
+					<iframe width="600" height="371" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQVMUJdvaMJpDslFF1LT2IX77A9fILAvJ0KdmYzjGXbaqTunbXurA2ACeeZpjJ_sUAbNpM1V0KYNTEd/pubchart?oid=1811611573&amp;format=interactive"></iframe>
+				</div>-->
+						
+						<div style="margin:5%">
+							<span id="youresult" class="label label-danger bigger" style="margin:10%">							
+								<h2 style="text-align:center">Ecodesign maturiteitsniveau: <b><span id="avgall"></span></b></h2>
+								<div style="visibility:hidden;"><span id="a1"></span><span id="a2"></span><span id="a3"></span><span id="a4"></span><span id="a5"></span><span id="a6"></span><span id="a7"></span><span id="a8"></span><span id="a9"></span><span id="a10"></span><span id="a11"></span><span id="a12"></span></div>
+								
+								<h3 id="mat1" class="hid">Ecodesign wordt niet toegepast of wordt niet systematisch toegepast door de onderneming.<br></h3>
+								<h3 id="mat2">Ecodesign wordt op ad-hocbasis gebruikt om problemen te corrigeren of om te reageren op een specifiek verzoek, maar zonder formele, systematische benadering.<br><br><hr>Uw volgende maturiteitsniveau zal zijn:<br><br>Het ecodesign-proces is geïntegreerd in de bedrijfsprocessen, in een kortetermijnvisie om de milieuprestaties van de onderneming te verbeteren.<br></h3>
+								<h3 id="mat3" class="hid">Het ecodesign-proces is geïntegreerd in de bedrijfsprocessen, in een kortetermijnvisie om de milieuprestaties van de onderneming te verbeteren.<br><br><hr>Uw volgende maturiteitsniveau zal zijn:<br><br>Ecodesign wordt geïmplementeerd om de milieuprestaties op lange termijn te verbeteren en is uitgerold in alle bedrijfssectoren.<br></h3>
+								<h3 id="mat4" class="hid">Ecodesign wordt geïmplementeerd om de milieuprestaties op lange termijn te verbeteren en is uitgerold in alle bedrijfssectoren.<br></h3>
+							</span>
+							
+							<div id="showfeedbackdiv">
+								<button id="showfeedback" type="button" class="btn btn-round center" onclick="$('#feedback').removeClass('hid');$('html, body').delay(50).animate({scrollTop: $('#feedback').offset().top }, 2000);$('#showfeedbackdiv').addClass('hid');">Volgende stappen<i class="fa fa-play"></i></button>
+								<br><br>
+							</div>
+							
+							<span class="hid">
+								<h2>Plan d'action</h2><br>
+							   		<h3 id="cat1" class="hid">Connaissances des enjeux</h3>
+										<h4 id="p7b" class="hid">Certains enjeux environnementaux importants sont connus mais pas forcément rattachés au cycle de vie</h4>
+										<h4 id="p7c" class="hid">Les principaux enjeux environnementaux sont connus tout au long du cycle de vie</h4>
+										<h4 id="p7d" class="hid">Les principaux enjeux environnementaux sont connus tout au long du cycle de vie et validés par la direction</h4>
+
+										<h4 id="p8b" class="hid">Les parties intéressées sont identifiées tout au long du cycle de vie, leurs attentes ou exigences sont connues uniquement lorsque les PI les portent à connaissance directement.</h4>
+										<h4 class="hid" id="p8c">Les parties intéressées et leurs attentes ou exigences sont identifiées tout au long du cycle de vie, particulièrement leur positionnement au regard de l'éco-conception.</h4>
+										<h4 class="hid" id="p8d">Les parties intéressées et leurs attentes ou exigences sont identifiées tout au long du cycle de vie, les PI sont associées aux projets d'éco-conception.</h4>
+
+										<h4 class="hid" id="p9b">Une analyse risques et opportunités est partiellement réalisée, sans lien avec le cycle de vie.</h4>
+										<h4 class="hid" id="p9c">L'analyse des risques et opportunités est réalisée en lien avec les enjeux environnementaux tout au long du cycle de vie, les attentes ou exigences des parties intéressées et la sphère d'influence de l'entreprise mais elle n'est pas validée par la direction et partagée aux équipes projet.</h4>
+										<h4 class="hid" id="p9d">L'analyse des risques et opportunités est réalisée et validée, à la fois au niveau des projets que de l'entreprise (domaine d'activités ou business unit).</h4>			
+
+									<h3 id="cat2" class="hid">Leadership et intégration stratégique</h3>
+											<h4 class="hid" id="p10b">La performance environnementale est intégrée dans la stratégie d'entreprise</h4>
+											<h4 class="hid" id="p10c">La performance environnementale et la pensée en cycle de vie sont intégrées dans la stratégie d'entreprise</h4>
+											<h4 class="hid" id="p10d">La performance environnementale et l'éco-conception sont intégrées dans la stratégie d'entreprise et font l'objet d'un plan d'action.</h4>
+											<h4 class="hid" id="p11b">Des moyens sont alloués ponctuellement pour un projet.</h4>
+											<h4 class="hid" id="p11c">Des moyens sont alloués mais restent insuffisants pour répondre aux enjeux environnementaux et à la stratégie d'entreprise sur le long terme.</h4>
+											<h4 class="hid" id="p11d">Des moyens sont alloués, ils sont appropriés à la stratégie et à l'engagement de l'entreprise dans le management du cycle de vie et la mise en oeuvre de l'éco-conception</h4>
+											<h4 class="hid" id="p12b">Les revues de direction abordent les enjeux environnementaux, sans les situer dans le cycle de vie de ses produits / services ni les élargir à la sphère d'influence de l'entreprise.</h4>
+											<h4 class="hid" id="p12c">Les revues de direction abordent les enjeux environnementaux dans une perspective de cycle de vie et la direction prend des décisions pour mettre en oeuvre l'éco-conception.</h4>
+											<h4 class="hid" id="p12d">Les revues de direction abordent la performance environnementale obtenue et mesurée lors de démarches d'éco-conception, la direction peut donc prendre les décisions appropriées afin d'améliorer la performance de l'entreprise.</h4>			
+						        
+									<h3 id="cat3" class="hid">Mise en œuvre et organisation opérationnelle</h3>
+											<h4 class="hid" id="p13b">L'équipe de conception et/ou R&D consulte le responsable environnement pour prendre en compte certains enjeux environnementaux, souvent sous contrainte réglementaire.</h4>
+											<h4 class="hid" id="p13c">Une équipe projet est formée ponctuellement pour répondre aux enjeux environnementaux tout au long du cycle de vie des produits/services et ainsi mener une démarche d'éco-conception.</h4>
+											<h4 class="hid" id="p13d">L'organisation en équipe projet est systématique et inscrite dans les procédures et méthodes de conception, intégrant ainsi le management du cycle de vie et des enjeux environnementaux.</h4>
+											<h4 class="hid" id="p14b">Une démarche d'éco-conception est mise en oeuvre pour répondre à une demande (client, médiatique...) avec des outils type approche matricielle, sans nécessairement d'indicateurs de mesure.</h4>
+											<h4 class="hid" id="p14c">Les méthodes d'éco-conception utilisées privilégient des approches simplifiées et quantifiées, dans une prise en compte complète du cycle de vie.</h4>
+											<h4 class="hid" id="p14d">Les méthodes et outils d'éco-conception sont intégrés dans les processus de développement sous diverses formes telles que règles métier, check-list ou guide de bonnes pratiques. Des bases de données permettent de capitaliser sur les connaissances acquises et de démultiplier les démarches pour une mise en oeuvre plus efficace.</h4>
+											<h4 class="hid" id="p15b">Des indicateurs sont identifiés mais restent assez vagues, les degrés de performance atteints sont souvent chiffrés en pourcentage ou en quantité de flux (ex : un moteur utilisant x litres en moins) sans comparaison validée.</h4>
+											<h4 class="hid" id="p15c">Des indicateurs appropriés sont identifiés et comparent les résultats obtenus dans une démarche d'éco-conception avec une situation de référence. Ils sont basés sur une vision globale des flux, parfois convertis en indicateurs d'impacts issu de logiciel d'ACV, simplifié ou non.</h4>
+											<h4 class="hid" id="p15d">Les indicateurs identifiés sont similaires au niveau précédent mais la performance est évaluée de manière plus approfondie avec des indicateurs détaillés, précis, nombreux. D'autres indicateurs montrent la capitalisation sur la démarche d'éco-conception afin de la démultiplier sur d'autres produits/services.</h4>
+									<h3 id="cat4" class="hid">Performance atteinte ou attendue</h3>
+											<h4 class="hid" id="p16b">L'entreprise fait appel ponctuellement à des ressources exterieures de type conseil et/ou une personne ressource a reçu une sensibilisation ou une courte formation.</h4>
+											<h4 class="hid" id="p16c">Une personne ressource dans l'entreprise a les connaissances et est en capacité d'animer les projets d'éco-conception.</h4>
+											<h4 class="hid" id="p16d">L'ensemble de l'équipe projet en lien avec le développement de produit ou service sont fomés et outillés et mettent en oeuvre l'éco-conception.</h4>
+											<h4 class="hid" id="p17b">Un ou plusieurs produits ont été éco-conçus, en réaction à des demandes ou des enjeux subis par l'entreprise, sans capitalisation pour d'autres projets.</h4>
+											<h4 class="hid" id="p17c">Les outils et méthodes d'éco-conception sont intégrés dans le processus de développement de produit ou service de l'entreprise.</h4>
+											<h4 class="hid" id="p17d">Tous les produits et services sont éco-conçus selon la vision et la stratégie choisie et portée par l'entreprise.</h4>
+											<h4 class="hid" id="p18b">Quelques allégations sur la performance environnementale des produits ou services sont diffusées, sans formalisation ni méthode.</h4>
+											<h4 class="hid" id="p18c">L'entreprise a établi un processus / une méthode de communication environnementale sur ces produits et services à destination essentiellement des clients et des fournisseurs.</h4>
+											<h4 class="hid" id="p18d">La communication externe sur la performance environnementale des produits et services de l'entreprise est établie, ciblant de toutes les parties prenantes au regard du cycle de vie (cllients/utilisateurs, fournisseurs, ONG, acteurs de la fin de vie, etc.).</h4>
+							  </span>
+							</div>
+							
+							
+							<div id="feedback" class="hid">	
+								 <script type="text/javascript">var submitted=false;</script>
+								 <!--<iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted){window.location='thanks.html';}"></iframe>-->
+								 <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"></iframe>
+								 <form action="https://docs.google.com/forms/d/e/1FAIpQLSeJcCeazZ3yA4TfJpIUolhKwSRMXJIlydS5HQSdvKz7iS78qw/formResponse?hl=en" method="POST" id="mG61Hd" target="hidden_iframe" onsubmit="submitted=true;">
+								     <div class="row">
+										<ul>
+											<li id="f1" class="question">
+												<h2 class="shadow framed fromleft">Hoe bent u van plan het volgende niveau te bereiken?</h2><br><input  type="textarea" class="form-control form-control-success inshadow fromright" placeholder="" name="entry.1989750116"  onchange="document.getElementById('but13').classList.remove('hid');">
+											</li>
+											<li id="f2" class="question">
+												<h2 class="shadow framed fromleft">Welke grote uitdagingen verwacht u als u naar het volgende niveau evolueert?</h2><br><input  type="textarea" class="form-control form-control-success inshadow fromright" placeholder="" name="entry.679648668"  onchange="document.getElementById('envoyer2').classList.remove('hid');">
+											</li>	
+										</ul>
+										<div id="senddiv">
+											<button onclick="$('#printdiv').removeClass('hid');$('#senddiv').addClass('hid')" id="envoyer2" class="center btn btn-success btn-round button-submit glow"><h2>Verstuur de antwoorden </h2></button>
+										</div>
+									</div>
+								</form>
+							</div>
+							
+							<div class="hid" id="printdiv">
+                            	<button id="print" type="button" class="btn btn-round center" onclick="document.getElementById('show-industry').style='display:none';document.getElementById('show-country').style='display:none';document.getElementById('show-global').style='display:none';document.getElementById('print').style='display:none';window.print();$('#emails').removeClass('hid');$('html, body').delay(50).animate({scrollTop: $('#emails').offset().top }, 2000);"><i class="fa fa-print"></i>Afdrukken</button>
+								<br><br>
+								<p></p>
+							</div>
+							
+							<div id="emails" class="hid">	
+								 <script type="text/javascript">var submitted=false;</script>
+								 <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"></iframe>
+								 <form action="https://docs.google.com/forms/d/e/1FAIpQLSf32y9BIcd3ZgyL8jcA3Du_D9oyZOTXorvP3suoqMAnoEWZ0A/formResponse?hl=en" method="POST" id="mG61Hd" target="hidden_iframe" onsubmit="submitted=true;">
+								     <div class="row">
+										<ul>
+											<li id="f3" class="question">
+												<h2 class="shadow framed fromleft">Bedankt voor uw antwoorden!<br>Wilt u een volledig rapport ontvangen van de ecodesign maturity assessment van bedrijven in Europa?</h2><br><input required type="email" class="form-control form-control-success inshadow fromright" placeholder="" name="entry.1060693203"  onchange="document.getElementById('envoyer3').classList.remove('hid');">
+                                                <input type="hidden" name="entry.1815474525" id="compName">
+											</li>
+										</ul>
+										<div id="emailsend">
+											<button id="envoyer3" onclick="$('#merci3').removeClass('hid');window.location='#merci3';" class="center btn btn-success btn-round button-submit glow"><h2>Sturen</h2></button>
+										</div>
+									</div>
+								</form>
+                                <br><br>
+                                <div id="merci3" class="hid"><h2 class="shadow framed fromleft">U ontvangt uw rapport zodra het gereed is.</h2></div>
+                                <br><br>
+							</div>
+							
+				</div>
+				
+		</div>
+	</div>	
+	
+			
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <nav class="footer-nav">
+                    <ul>
+						<li>Contacteer ons voor ondersteuning bij uw actieplan:</li>
+						<li><a href="mailto:contact@myecodesignmaturity.eu">Contacteer ons</a></li>
+
+                    </ul>
+                </nav>
+                <div class="credits ml-auto">
+                    <span class="copyright">
+                        © <script>document.write(new Date().getFullYear())</script> 
+                    </span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+<script type="text/javascript"> 
+	$(document).ready(function(){
+		var mySpreadsheet = 'https://docs.google.com/spreadsheets/d/1KcqLsE8S6b4ni67ZxbSQv8lj3sgeQUoVO3UhSLQZ6RQ/edit#gid=0'; 
+		$('#avgall').sheetrock({ url: mySpreadsheet, query: "select G limit 1" });
+		$('#a1').sheetrock({ url: mySpreadsheet, query: "select H limit 1" });
+		$('#a2').sheetrock({ url: mySpreadsheet, query: "select I limit 1" });
+		$('#a3').sheetrock({ url: mySpreadsheet, query: "select J limit 1" });
+		$('#a4').sheetrock({ url: mySpreadsheet, query: "select K limit 1" });
+		$('#a5').sheetrock({ url: mySpreadsheet, query: "select L limit 1" });
+		$('#a6').sheetrock({ url: mySpreadsheet, query: "select M limit 1" });
+		$('#a7').sheetrock({ url: mySpreadsheet, query: "select N limit 1" });
+		$('#a8').sheetrock({ url: mySpreadsheet, query: "select O limit 1" });
+		$('#a9').sheetrock({ url: mySpreadsheet, query: "select P limit 1" });
+		$('#a10').sheetrock({ url: mySpreadsheet, query: "select Q limit 1" });
+		$('#a11').sheetrock({ url: mySpreadsheet, query: "select R limit 1" });
+		$('#a12').sheetrock({ url: mySpreadsheet, query: "select S limit 1" });
+		$('#myfirm').sheetrock({ url: mySpreadsheet, query: "select X limit 1" });
+				
+		setTimeout(
+		  function() 
+		  {
+
+			if ( $('#a1').text()==1 ) { $('#p7b').removeClass("hid"); $('#cat1').removeClass("hid"); } else if ( $('#a1').text()==2 ) {$('#p7c').removeClass("hid"); $('#cat1').removeClass("hid"); } else if ( $('#a1').text()==3 ) { $('#p7d').removeClass("hid"); $('#cat1').removeClass("hid"); }
+	   		if ( $('#a2').text()==1 ) { $('#p8b').removeClass("hid"); $('#cat1').removeClass("hid"); } else if ( $('#a2').text()==2 ) { $('#p8c').removeClass("hid"); $('#cat1').removeClass("hid"); } else if ( $('#a2').text()==3 ) { $('#p8d').removeClass("hid"); $('#cat1').removeClass("hid"); }
+	   		if ( $('#a3').text()==1 ) { $('#p9b').removeClass("hid"); $('#cat1').removeClass("hid"); } else if ( $('#a3').text()==2 ) { $('#p9c').removeClass("hid"); $('#cat1').removeClass("hid"); } else if ( $('#a3').text()==3 ) { $('#p9d').removeClass("hid"); $('#cat1').removeClass("hid"); }
+			
+	   		if ( $('#a4').text()==1 ) { $('#p10b').removeClass("hid"); $('#cat2').removeClass("hid"); } else if ( $('#a4').text()==2 ) { $('#p10c').removeClass("hid"); $('#cat2').removeClass("hid"); } else if ( $('#a4').text()==3 ) { $('#p10d').removeClass("hid"); $('#cat2').removeClass("hid"); }
+	   		if ( $('#a5').text()==1 ) { $('#p11b').removeClass("hid"); $('#cat2').removeClass("hid"); } else if ( $('#a5').text()==2 ) { $('#p11c').removeClass("hid"); $('#cat2').removeClass("hid"); } else if ( $('#a5').text()==3 ) { $('#p11d').removeClass("hid"); $('#cat2').removeClass("hid"); }
+	   		if ( $('#a6').text()==1 ) { $('#p12b').removeClass("hid"); $('#cat2').removeClass("hid"); } else if ( $('#a6').text()==2 ) { $('#p12c').removeClass("hid"); $('#cat2').removeClass("hid"); } else if ( $('#a6').text()==3 ) { $('#p12d').removeClass("hid"); $('#cat2').removeClass("hid"); }
+
+	   		if ( $('#a7').text()==1 ) { $('#p13b').removeClass("hid"); $('#cat3').removeClass("hid"); } else if ( $('#a7').text()==2 ) { $('#p13c').removeClass("hid"); $('#cat3').removeClass("hid"); } else if ( $('#a7').text()==3 ) { $('#p13d').removeClass("hid"); $('#cat3').removeClass("hid"); }
+	   		if ( $('#a8').text()==1 ) { $('#p14b').removeClass("hid");  $('#cat3').removeClass("hid"); } else if ( $('#a8').text()==2 ) { $('#p14c').removeClass("hid");  $('#cat3').removeClass("hid"); } else if ( $('#a8').text()==3 ) { $('#p14d').removeClass("hid"); $('#cat3').removeClass("hid"); }
+	   		if ( $('#a9').text()==1 ) { $('#p15b').removeClass("hid");  $('#cat3').removeClass("hid"); } else if ( $('#a9').text()==2 ) { $('#p15c').removeClass("hid"); $('#cat3').removeClass("hid"); } else if ( $('#a9').text()==3 ) { $('#p15d').removeClass("hid"); $('#cat3').removeClass("hid"); }
+
+	   		if ( $('#a10').text()==1 ) { $('#p16b').removeClass("hid"); $('#cat4').removeClass("hid"); } else if ( $('#a10').text()==2 ) { $('#p16c').removeClass("hid"); $('#cat4').removeClass("hid"); } else if ( $('#a10').text()==3 ) { $('#p16d').removeClass("hid"); $('#cat4').removeClass("hid"); }
+	   		if ( $('#a11').text()==1 ) { $('#p17b').removeClass("hid"); $('#cat4').removeClass("hid"); } else if ( $('#a11').text()==2 ) { $('#p17c').removeClass("hid"); $('#cat4').removeClass("hid"); } else if ( $('#a11').text()==3 ) { $('#p17d').removeClass("hid"); $('#cat4').removeClass("hid"); }
+	   		if ( $('#a12').text()==1 ) { $('#p18b').removeClass("hid"); $('#cat4').removeClass("hid"); } else if ( $('#a12').text()==2 ) { $('#p18c').removeClass("hid"); $('#cat4').removeClass("hid"); } else if ( $('#a12').text()==3 ) { $('#p18d').removeClass("hid"); $('#cat4').removeClass("hid"); }	
+		    
+			youravg = parseFloat ( $('#avgall').text() );
+			if ( youravg<2 ) { $('#youresult').addClass("big1"); } else if ( youravg<3 ) { $('#youresult').addClass("big2"); } else if ( youravg<4 ) { $('#youresult').addClass("big3"); } else { $('#youresult').addClass("big4"); }
+			
+			if ( isIE() ) {
+				$('#rightco').removeClass('hid');
+				$('#compName').val($('#myfirm').html());
+			} else {
+				var u = window.location.href;	
+				if (decodeURI(getUrlVars()["co"])!=$('#myfirm').html()) {
+					if (u.indexOf("&re=2")!=-1) {
+						$('#wrongco').removeClass('hid');
+						$('#companyName').val($('#myfirm').html());
+					} else if (u.indexOf("&re=1")!=-1) {
+						window.location.reload(true); 
+						window.location=u+'&re=2';
+					} else {
+						window.location.reload(true); 
+						window.location=u+'&re=1';
+					} 
+				} else if (u.indexOf("&re=3")!=-1) {
+					$('#rightco').removeClass('hid');
+					$('#compName').val($('#myfirm').html());
+					
+				} else {
+					window.location.reload(true); 
+					window.location=u+'&re=3';
+				}
+			} 
+			$('#processing').addClass('hid');
+		  }, 3000);
+
+	});
+	
+</script>
+	
+<script src="assets/js/jquery-ui-1.12.1.custom.min.js" type="text/javascript"></script>
+<script src="assets/js/popper.js" type="text/javascript"></script>
+<script src="assets/js/bootstrap.min.js" type="text/javascript"></script>
+<script src="assets/js/bootstrap-switch.min.js"></script>
+<script src="assets/js/paper-kit.js?v=2.1.0"></script> 
+<script src="test.js" type="text/javascript"></script>
+
+</html>

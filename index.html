@@ -11,7 +11,9 @@
     <meta name="viewport" content="width=device-width" />
 	<link href="test.css" rel="stylesheet" />
 	<link href="assets/css/demo.css" rel="stylesheet" />
-	<link href="assets/css/bootstrap.min.css" rel="stylesheet" />
+	<!--	<link href="assets/css/bootstrap.min.css" rel="stylesheet" />-->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.1.0/css/flag-icon.min.css" rel="stylesheet">
 	<link href="assets/css/paper-kit.css?v=2.1.0" rel="stylesheet"/>
     <link href='https://fonts.googleapis.com/css?family=Montserrat:400,300,700' rel='stylesheet' type='text/css'>
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet">
@@ -44,10 +46,20 @@
                     <li class="nav-item">
                         <a class="nav-link" rel="tooltip" title="à propos de l'équipe" data-placement="bottom" onclick="$('html, body').delay(100).animate({scrollTop: $('#team').offset().top }, 2000);">Équipe&nbsp;&nbsp;<i class="fa fa-themeisle"></i></a>
                     </li>
+                    <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" rel="tooltip" title="la langue" href="index.html" id="dropdown09" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="flag-icon flag-icon-fr"> </span> Française</a>
+                            <div class="dropdown-menu" aria-labelledby="dropdown09">
+                                <a class="dropdown-item" href="nl.html"><span class="flag-icon flag-icon-nl"> </span>  Néerlandaise</a>
+                                <a class="dropdown-item" href="de.html"><span class="flag-icon flag-icon-de"> </span>  Allemande</a>
+                                <a class="dropdown-item" href="en.html"><span class="flag-icon flag-icon-gb"> </span>  Anglaise</a>
+                            </div>
+                    </li>
                 </ul>
+<!--
                 <ul class="nav navbar-nav navbar-right">
                     <a class="nav-link" href="en.html" id="language" title="EN" data-placement="bottom"><img src="assets/img/enfr.jpg" alt="EN" /></a>
                 </ul>
+-->
             </div>
         </div>
     </nav>
@@ -85,7 +97,7 @@
     				<div class="title-brand">
     					<h1>Evaluez votre<br>maturité en éco-conception</h1><br><br><br>
 						<p id="iosmessage" class="hid"><i class="fa fa-exclamation-triangle"></i> <b>Veuillez utiliser le navigateur Chrome sur votre iPhone ou iPad.</b></p>	
-						<h2>Obtenez un bilan gratuit et comparez-vous à <span id="gcnt"></span> entreprises</b><br>
+						<h2>Obtenez un bilan gratuit et comparez-vous à <span id="gcnt"></span> entreprises<br>
 							<br><br><br></h2>
 						<p id="mozmessage" class="onlymoz"><i class="fa fa-exclamation-triangle"></i> Cet outil fonctionne mieux sur les navigateurs Chrome et Safari.</p>		
     				</div>
